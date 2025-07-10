@@ -1173,7 +1173,7 @@ img {
 }
 
 .main-header {
-  background: url(/week1/static/image/hero.png) no-repeat center center;
+  background: url(../../image/hero.png) no-repeat center center;
   padding: 152px 0;
 }
 
