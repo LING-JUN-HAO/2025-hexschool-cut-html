@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as vars;
+
+$text-map: (
+  primary: vars.$text-primary,
+  secondary: vars.$text-secondary,
+  muted: vars.$text-muted,
+  highlight: vars.$text-highlight,
+  white: vars.$text-on-dark,
+);
+
+@each $name, $color in $text-map {
+  .text-#{$name} {
+    color: $color;
+  }
+}

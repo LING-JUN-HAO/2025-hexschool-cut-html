@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as vars;
+
+$radius-map: (
+  sm: vars.$radius-sm,
+  md: vars.$radius-md,
+  rounded: vars.$radius-rounded,
+);
+
+@each $key, $value in $radius-map {
+  .radius-#{$key} {
+    border-radius: $value;
+  }
+}

@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as vars;
+
+$spacings: (
+  0: vars.$space-0,
+  1: vars.$space-1,
+  2: vars.$space-2,
+  3: vars.$space-3,
+  4: vars.$space-4,
+  5: vars.$space-5,
+  6: vars.$space-6,
+  7: vars.$space-7,
+  8: vars.$space-8,
+  9: vars.$space-9,
+  10: vars.$space-10,
+  11: vars.$space-11,
+  12: vars.$space-12,
+  13: vars.$space-13,
+  14: vars.$space-14,
+  15: vars.$space-15,
+  16: vars.$space-16,
+);
+
+@each $key, $value in $spacings {
+  .m-#{$key} {
+    margin: $value;
+  }
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+  .mr-#{$key} {
+    margin-right: $value;
+  }
+  .ml-#{$key} {
+    margin-left: $value;
+  }
+
+  .p-#{$key} {
+    padding: $value;
+  }
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
+  .pr-#{$key} {
+    padding-right: $value;
+  }
+  .pl-#{$key} {
+    padding-left: $value;
+  }
+}
+
+.m-auto {
+  margin: auto;
+}

@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as vars;
+
+// 定義一個 SCSS map，包含你想用的顏色類別
+$bg-colors: (
+  primary-100: vars.$primary-100,
+  primary-200: vars.$primary-200,
+  primary-300: vars.$primary-300,
+  primary-400: vars.$primary-400,
+  primary-500: vars.$primary-500,
+
+  neutral-white: vars.$neutral-white,
+  neutral-100: vars.$neutral-100,
+  neutral-200: vars.$neutral-200,
+  neutral-300: vars.$neutral-300,
+  neutral-400: vars.$neutral-400,
+  neutral-500: vars.$neutral-500,
+  neutral-600: vars.$neutral-600,
+  neutral-700: vars.$neutral-700,
+  neutral-800: vars.$neutral-800,
+  neutral-900: vars.$neutral-900,
+
+  danger-100: vars.$danger-100,
+  danger-200: vars.$danger-200,
+  danger-300: vars.$danger-300,
+
+  success-100: vars.$success-100,
+  success-200: vars.$success-200,
+  success-300: vars.$success-300,
+
+  warning-100: vars.$warning-100,
+  warning-200: vars.$warning-200,
+  warning-300: vars.$warning-300,
+
+  info-100: vars.$info-100,
+  info-200: vars.$info-200,
+  info-300: vars.$info-300,
+);
+
+// 自動生成 .bg-* 類別
+@each $name, $color in $bg-colors {
+  .bg-#{$name} {
+    background-color: #{$color};
+  }
+
+  .text-#{$name} {
+    color: #{$color};
+  }
+}

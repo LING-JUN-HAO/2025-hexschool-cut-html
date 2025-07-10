@@ -1,0 +1,103 @@
+@use "../abstracts/variables" as vars;
+
+.text-display {
+  &-1 {
+    font-size: vars.$font-display-1;
+    line-height: vars.$lh-tight;
+    letter-spacing: vars.$letter-spacing-default;
+  }
+  &-2 {
+    font-size: vars.$font-display-2;
+    line-height: vars.$lh-tight;
+    letter-spacing: vars.$letter-spacing-default;
+  }
+}
+
+// H 標籤
+.text {
+  &-h1 {
+    font-size: vars.$font-h1;
+    line-height: vars.$lh-tight;
+    letter-spacing: vars.$letter-spacing-default;
+    font-weight: vars.$fw-bold;
+  }
+
+  &-h2 {
+    font-size: vars.$font-h2;
+    line-height: vars.$lh-tight;
+    letter-spacing: vars.$letter-spacing-default;
+    font-weight: vars.$fw-bold;
+  }
+
+  &-h3 {
+    font-size: vars.$font-h3;
+    line-height: vars.$lh-tight;
+    letter-spacing: vars.$letter-spacing-default;
+    font-weight: vars.$fw-bold;
+  }
+
+  &-h4 {
+    font-size: vars.$font-h4;
+    line-height: vars.$lh-tight;
+    letter-spacing: vars.$letter-spacing-default;
+    font-weight: vars.$fw-bold;
+  }
+
+  &-h5 {
+    font-size: vars.$font-h5;
+    line-height: vars.$lh-tight;
+    letter-spacing: vars.$letter-spacing-default;
+    font-weight: vars.$fw-bold;
+  }
+}
+
+// label 標籤
+.text-label {
+  &-lg {
+    font-size: vars.$font-label-lg;
+    line-height: vars.$lh-normal;
+    letter-spacing: vars.$letter-spacing-default;
+  }
+
+  &-md {
+    font-size: vars.$font-label-md;
+    line-height: vars.$lh-normal;
+    letter-spacing: vars.$letter-spacing-default;
+  }
+
+  &-sm {
+    font-size: vars.$font-label-sm;
+    line-height: vars.$lh-normal;
+    letter-spacing: vars.$letter-spacing-default;
+  }
+
+  &-xs {
+    font-size: vars.$font-label-xs;
+    line-height: vars.$lh-normal;
+    letter-spacing: vars.$letter-spacing-default;
+  }
+}
+
+// paragraph 標籤
+.text-paragraph {
+  &-lg {
+    font-size: vars.$font-paragraph-lg;
+    line-height: vars.$lh-normal;
+    letter-spacing: vars.$letter-spacing-default;
+  }
+  &-md {
+    font-size: vars.$font-paragraph-md;
+    line-height: vars.$lh-normal;
+    letter-spacing: vars.$letter-spacing-default;
+  }
+  &-sm {
+    font-size: vars.$font-paragraph-sm;
+    line-height: vars.$lh-normal;
+    letter-spacing: vars.$letter-spacing-default;
+  }
+  &-xs {
+    font-size: vars.$font-paragraph-xs;
+    line-height: vars.$lh-normal;
+    letter-spacing: vars.$letter-spacing-default;
+  }
+}

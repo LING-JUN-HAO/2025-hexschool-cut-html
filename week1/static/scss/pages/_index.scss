@@ -1,0 +1,87 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/media" as bp;
+
+.main-header {
+  background: url(/week1/static/image/hero.png) no-repeat center center;
+  padding: 152px 0;
+}
+
+.intro {
+  margin: auto auto 3rem auto;
+  text-align: center;
+}
+
+.brand {
+  img {
+    max-width: 1076px;
+    margin: auto -110px;
+
+    @include bp.respond-md {
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+
+  .text {
+    border-bottom: 1px solid #{vars.$neutral-300};
+  }
+}
+
+.brand-history {
+  .brand-history-list {
+    border-bottom: 1px solid #{vars.$neutral-300};
+  }
+  .brand-history-item {
+    display: flex;
+    &::before {
+      content: "";
+      display: block;
+      height: 0.25rem;
+      width: 0.25rem;
+      border-radius: 50%;
+      background-color: black;
+      margin-right: 0.75rem;
+      margin-left: 0.5rem;
+      margin-top: calc((1.5rem - 3px) / 2 + 2px);
+    }
+
+    .description {
+      border-left: 1px solid #{vars.$neutral-900};
+    }
+  }
+}
+
+.brand-concept {
+  .brand-concept-list {
+    border-bottom: 1px solid #{vars.$neutral-300};
+  }
+  .brand-concept-item {
+    border-left: 3px solid #{vars.$neutral-300};
+  }
+}
+
+.brand-story {
+  .title {
+    display: inline-block;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: #{vars.$primary-400};
+      margin-top: 0.25rem;
+    }
+  }
+
+  .arrow-top-right {
+    display: inline-block;
+    font-size: 15px;
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}
+
+.main-footer {
+  padding: 4rem 0;
+  text-align: center;
+}
