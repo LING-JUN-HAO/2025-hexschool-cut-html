@@ -1,7 +1,7 @@
-$breakpoint-md: 1076px;
+$breakpoint-xl: 1200px;
 
-@mixin respond-md {
-  @media (max-width: $breakpoint-md) {
+@mixin respond-xl {
+  @media (max-width: $breakpoint-xl) {
     @content;
   }
 }

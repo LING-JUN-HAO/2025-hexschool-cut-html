@@ -7,16 +7,15 @@
 }
 
 .intro {
-  margin: auto auto 3rem auto;
   text-align: center;
 }
 
 .brand {
   img {
-    max-width: 1076px;
-    margin: auto -110px;
+    max-width: 125.7%;
+    margin: auto -12.86%;
 
-    @include bp.respond-md {
+    @include bp.respond-xl {
       max-width: 100%;
       margin: auto;
     }

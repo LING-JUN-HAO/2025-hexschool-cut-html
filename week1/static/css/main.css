@@ -152,8 +152,9 @@ img {
 }
 
 .container {
-  max-width: 856px;
+  max-width: 888px;
   margin: auto;
+  padding: 0 1rem;
 }
 
 .text-display-1 {
@@ -1178,15 +1179,14 @@ img {
 }
 
 .intro {
-  margin: auto auto 3rem auto;
   text-align: center;
 }
 
 .brand img {
-  max-width: 1076px;
-  margin: auto -110px;
+  max-width: 125.7%;
+  margin: auto -12.86%;
 }
-@media (max-width: 1076px) {
+@media (max-width: 1200px) {
   .brand img {
     max-width: 100%;
     margin: auto;
